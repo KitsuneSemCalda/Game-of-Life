@@ -13,7 +13,7 @@ git clone https://github.com/KitsuneSemCalda/Game-of-life.git
 cd conways-game-of-life
 ```
 ## Usage
-To start the game, open the index.html in your browser or access: <a href="https://game-of-life-pi-one.vercel.app/")> Link to acess site </a> <br>
+To start the game, open the index.html in your browser or access https://game-of-life-pi-one.vercel.app/ <br>
 The game will start automatically in your default browser.
 
 ## How to Work
