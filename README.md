@@ -9,11 +9,11 @@ These instructions will get you a copy of the project up and running on your loc
 Clone this repository using the following command:
 
 ```sh
-git clone https://github.com/<your-username>/conways-game-of-life.git
+git clone https://github.com/KitsuneSemCalda/Game-of-life.git
 cd conways-game-of-life
 ```
 ## Usage
-To start the game, open the index.html in your browser or access: [link to acess the site]("https://game-of-life-pi-one.vercel.app/")
+To start the game, open the index.html in your browser or access: [link to acess the site]("https://game-of-life-pi-one.vercel.app/") <br>
 The game will start automatically in your default browser.
 
 ## How to Work
