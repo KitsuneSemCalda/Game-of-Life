@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Kitsune Game of life</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+
+    <h1> Kitsune Game of Life </h1> 
+    
+    <p> Game of life it's a cellular automaton devised by the british mathematician John Horton Conway.</p>
+    <p> This is a zero player game. </p>
+    
+    <h2> Rules </h2>
+    
+    <ol>
+      <li> Any live cell will fewer than two live neighbours dies, as if by underpopulation
+      <li> Any live cell with two or three neighbours lives on the next generation
+      <li> Any live cell with more than three live neighbours dies, as if by overpopulation
+      <li> Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction
+    </ol>
+    
+    </header>
+
+    <main>
+      <form action="game.html" method="get">
+        <button type="submit"> Start Game </button>
+      </form>
+    </main>
+    <script src="logical.js"> </script>
+  </body>
+</html>
