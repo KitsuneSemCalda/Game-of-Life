@@ -71,8 +71,10 @@ function update() {
 }
 
 function loop() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  window.addEventListener("resize", () => {
+   canvas.width = window.innerWidth;
+   canvas.height = window.innerHeight;
+  })
   update();
   drawGrid();
   requestAnimationFrame(loop);
