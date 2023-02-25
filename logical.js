@@ -72,15 +72,17 @@ function update() {
   grid = next;
 }
 
-function loop() {
-  // O gostoso do leo me corrigiu // tirando addEventListener do loop 
-  update();
-  drawGrid();
-  requestAnimationFrame(loop);
+async function loop() {
+  while (true){
+    update();
+    drawGrid();
+    await new Promise(resolve => requestAnimationFrame(resolve));
+  }
 }
 
 window.addEventListener("resize", () => {
    canvas.width = window.innerWidth;
    canvas.height = window.innerHeight;
 })
-requestAnimationFrame(loop);
+
+loop()
