@@ -1,7 +1,7 @@
 const canvas = document.getElementById("logical-game")
 const ctx = canvas.getContext("2d")
-const cols = 720;
-const rows = 720;
+const cols = window.innerWidth;
+const rows = window.innerHeight;
 const cellSize = 5;
 
 let grid = generateGrid(cols, rows);
@@ -20,7 +20,7 @@ function generateGrid(cols, rows) {
 }
 
 function drawGrid() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.clearRect(0, 0, cols, rows);
   for (let i = 0; i < cols; i++) {
     for (let j = 0; j < rows; j++) {
       const x = i * cellSize;
@@ -71,6 +71,8 @@ function update() {
 }
 
 function loop() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
   update();
   drawGrid();
   requestAnimationFrame(loop);
