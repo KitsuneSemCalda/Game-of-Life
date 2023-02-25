@@ -3,6 +3,8 @@ const ctx = canvas.getContext("2d")
 const cols = window.innerWidth;
 const rows = window.innerHeight;
 const cellSize = 5;
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
 
 let grid = generateGrid(cols, rows);
 
