@@ -73,13 +73,14 @@ function update() {
 }
 
 function loop() {
-  window.addEventListener("resize", () => {
-   canvas.width = window.innerWidth;
-   canvas.height = window.innerHeight;
-  })
+  // O gostoso do leo me corrigiu // tirando addEventListener do loop 
   update();
   drawGrid();
   requestAnimationFrame(loop);
 }
 
+window.addEventListener("resize", () => {
+   canvas.width = window.innerWidth;
+   canvas.height = window.innerHeight;
+})
 requestAnimationFrame(loop);
