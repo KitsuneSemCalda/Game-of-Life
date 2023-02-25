@@ -1,8 +1,8 @@
 const canvas = document.getElementById("logical-game")
 const ctx = canvas.getContext("2d")
-const cellSize = 3;
-const cols = Math.ceil(window.innerWidth / cellSize);
-const rows = Math.ceil(window.innerHeight / cellSize);
+let cellSize = 3;
+let cols = Math.ceil(window.innerWidth / cellSize);
+let rows = Math.ceil(window.innerHeight / cellSize);
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
